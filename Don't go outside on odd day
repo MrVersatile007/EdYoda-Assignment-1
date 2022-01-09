@@ -1,0 +1,42 @@
+# Don't go outside on odd  day
+
+Write a Python program to count the number of even and odd numbers from a series of numbers.
+
+Sample numbers : numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
+
+Expected Output :
+
+Number of even numbers : 5
+
+Number of odd numbers : 4
+############################    CODE STARTS FROM HERE !
+
+sample = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+even = 0 
+odd = 0
+index = 0
+while index < len(sample):
+    #0,1,3,4... 8   < 9
+    if sample[index] % 2 == 0:
+       #1%2 == 0  (false) - odd
+       #2%2 == 0  (true) - even
+       #3%2 == 0  (false) - odd
+       #4%2 == 0  (true) - even
+       # ...
+       #9%2 == 0  (false) - odd
+        even += 1
+        #0 + 1
+        #1 + 1....
+        #3 + 1
+    else:
+    
+        odd += 1
+        #0 + 1
+        #1 + 1....
+        #4 + 1
+    index += 1
+    #0 1 2 3 ..... 9 then breaks
+        
+print("you have", even ,"even numbers")
+print("you also have", odd, "odd numbers")
+    
