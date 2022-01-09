@@ -1,0 +1,17 @@
+Write a Python program that accepts a word from the user and reverse it.
+
+Sample Test Case
+
+Input : Edyoda
+
+output: adoydE
+
+######################    CODE STARTS FROM HERE!
+
+word = input('hey user! Give me a word and watch a magic : ') #Edyoda
+        #we have a string
+
+print(word[::-1]) 
+# print(list[a:b:c]) will include characters from a to b (excluding b) with the difference of c between them 
+# and if c is negative it just mean in reverse order
+
